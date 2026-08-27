@@ -99,7 +99,7 @@ def chat():
     except RuntimeError as e:
         return jsonify({"error": str(e)}), 500
 
-    model = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
+    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 
     prompt = f"{tool_context}\nUser: {user_msg}\nAssistant:"
 
@@ -127,7 +127,7 @@ def chat_stream():
     except RuntimeError as e:
         return jsonify({"error": str(e)}), 500
 
-    model = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
+    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
     prompt = f"{tool_context}\nUser: {user_msg}\nAssistant:"
 
     def generate():
