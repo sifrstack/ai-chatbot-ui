@@ -59,7 +59,7 @@ export GEMINI_API_KEY="YOUR_KEY"
 Optional:
 
 ```bash
-export GEMINI_MODEL="gemini-2.5-flash"
+export GEMINI_MODEL="gemini-3.6-flash"
 ```
 
 Never commit a real API key. The repository includes `.env.example` for configuration guidance.
